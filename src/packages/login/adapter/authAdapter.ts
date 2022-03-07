@@ -1,5 +1,5 @@
-import { AuthenticationService } from '../application/ports';
 import { User } from '../../domain/user';
+import { AuthenticationService } from '../application/ports';
 
 function mockApi<T>(response: T): Promise<T> {
   return new Promise((resolve) => setTimeout(() => resolve(response), 500));
